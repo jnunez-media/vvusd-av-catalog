@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VVUSD Audio/Video Equipment Catalog 2026–2027</title>
+<meta name="description" content="Val Verde Unified School District — Audio/Video Equipment Catalog, 2026–2027. Browse audio, video, peripherals, and miscellaneous production equipment.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">VVUSD <span class="gold">A/V Catalog</span></div>
+  <div class="pageinfo" id="topPageInfo"></div>
+</header>
+
+<div id="app">
+  <div class="book-wrap" id="book-wrap">
+    <div class="nav-zone left" aria-label="Previous page"></div>
+    <div class="nav-zone right" aria-label="Next page"></div>
+    <div id="book"></div>
+  </div>
+
+  <div class="controls">
+    <button id="prevBtn">&larr; Prev</button>
+    <span class="counter" id="counter">Page 1</span>
+    <button id="nextBtn">Next &rarr;</button>
+  </div>
+
+  <footer class="credit">
+    Val Verde Unified School District · Audio/Video Equipment Catalog 2026–2027 · Use the arrow keys, buttons, or click the page edges to flip
+  </footer>
+</div>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
