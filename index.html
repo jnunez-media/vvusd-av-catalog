@@ -14,22 +14,34 @@
   <div class="pageinfo" id="topPageInfo"></div>
 </header>
 
-<div id="app">
+<div id="stage">
   <div class="book-wrap" id="book-wrap">
-    <div class="nav-zone left" aria-label="Previous page"></div>
-    <div class="nav-zone right" aria-label="Next page"></div>
-    <div id="book"></div>
+    <div id="book">
+      <div class="book-shadow"></div>
+      <div class="static-panel left"></div>
+      <div class="static-panel right"></div>
+      <div class="spine-shadow"></div>
+      <!-- leaves injected by app.js -->
+      <div class="nav-zone left"><span class="corner-arrow">&#8592;</span></div>
+      <div class="nav-zone right"><span class="corner-arrow">&#8594;</span></div>
+    </div>
   </div>
+</div>
 
-  <div class="controls">
-    <button id="prevBtn">&larr; Prev</button>
-    <span class="counter" id="counter">Page 1</span>
-    <button id="nextBtn">Next &rarr;</button>
-  </div>
+<div class="toolbar">
+  <button class="icon-btn" id="zoomOutBtn" title="Zoom out">&#8722;</button>
+  <button class="icon-btn" id="zoomInBtn" title="Zoom in">&#43;</button>
+  <button class="icon-btn" id="gridBtn" title="Page thumbnails">&#9638;</button>
+  <button class="icon-btn" id="prevBtn" title="Previous page">&#8592;</button>
+  <input type="range" id="pageSlider" min="0" max="1" value="0" step="1">
+  <span class="page-count" id="pageCount">1 / 1</span>
+  <button class="icon-btn" id="nextBtn" title="Next page">&#8594;</button>
+  <button class="icon-btn" id="fullscreenBtn" title="Fullscreen">&#9974;</button>
+</div>
 
-  <footer class="credit">
-    Val Verde Unified School District · Audio/Video Equipment Catalog 2026–2027 · Use the arrow keys, buttons, or click the page edges to flip
-  </footer>
+<div id="thumbGrid">
+  <button class="thumb-close" id="thumbClose">&#215;</button>
+  <div class="thumb-grid-inner" id="thumbGridInner"></div>
 </div>
 
 <script src="data.js"></script>
